@@ -7,7 +7,23 @@
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  html {
+    box-sizing:border-box;
+  }
+  ul {
+    list-style: none;
+  }
 
 body {
     font-family: var(--primary-font);
@@ -17,7 +33,17 @@ body {
 
 .header {
     background-color: #FFFFFF;
+
 }
+
+.header .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 1200px;
+    height: 80px;
+  }
+
 .header__logo {
     text-decoration: none;
 }
@@ -41,8 +67,10 @@ body {
 
 
 .header__navigation ul {
-    list-style: none;
+    display: flex;
+    gap: 50px;
 }
+
 .header__navigation a {
     text-decoration: none;
     font-family: var(--primary-font);
@@ -50,6 +78,8 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: var(--black);
+   
+    
 }
 .header__navigation a:hover {
     color: var(--blue);
@@ -61,7 +91,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: var(--black);
+    color: var(--black); 
 }
 .header__info a:hover {
     color: var(--blue);
@@ -71,17 +101,24 @@ body {
 
 .hero-section {
 background-color: var(--light-black);
-height: 200px;
+width: 1600px;
+height: 600px;
+display: flex;
+justify-content:center
+
+
+
 }
 .hero-section__h1 {
     text-decoration: none;
     font-family: var(--primary-font);
     font-weight: 900;
     font-size: 44px;
-    line-height: 16px;
+    line-height: 136%;
     color: var(--white);
-    text-align: center;
-    padding-top: 5pc;   
+    padding-top: 160px;
+    width: 669px;
+    height: 120px;
 }   
 .hero-section__service {
     font-family: var(--primary-font);
@@ -91,9 +128,10 @@ height: 200px;
     background-color: var(--blue);
     color: var(--white);
     text-transform: uppercase;
-    border-radius: 2px;
     cursor: pointer;
-    border: 1px solid var(--blue);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
 }
 .div-button {
 text-align: center;
@@ -118,6 +156,16 @@ text-align: center;
     color: var(--black);
 }
 /* What we do style*/ /* Our team style*/
+.what-section {
+    width: 1200px;
+    height: 386px;
+}
+.team-section {
+    background-color: var(--light-grey); 
+    width: 1200px;
+    height: 648px;
+}
+
 .h2 {
     text-decoration: none;
     font-family: var(--primary-font);
@@ -126,9 +174,7 @@ text-align: center;
     line-height: 16px;
     color: var(--black);
 }
-.team-section {
-    background-color: var(--light-grey);
-}
+
 .h6 {
     font-family: var(--primary-font);
     font-size: 16px;
