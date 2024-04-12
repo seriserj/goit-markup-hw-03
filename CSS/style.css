@@ -172,9 +172,10 @@ margin-top: 30px;
 
 .what-section .container {
     display: flex;
+    gap: 30px;
     margin-bottom: 94px;
     margin-top: 94px;
-    gap: 30px;
+    
 }
 .team-section {
     background-color: var(--light-grey); 
