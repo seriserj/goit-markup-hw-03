@@ -33,7 +33,7 @@ body {
 
 .header {
     background-color: #FFFFFF;
-
+   
 }
 
 .header .container {
@@ -101,7 +101,7 @@ body {
 
 .hero-section {
 background-color: var(--light-black);
-width: 1200px;
+width: 1600px;
 height: 600px;
 }
 .hero-section .container {
